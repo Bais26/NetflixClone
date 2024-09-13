@@ -42,7 +42,7 @@ const HeroSection: React.FC = () => {
   }
 
   return (
-    <div className="relative w-full h-screen bg-gray-900 -z-20
+    <div className="relative w-full h-screen bg-gray-900 z-10
     ">
       <Navbar/>
       <img 
@@ -51,7 +51,7 @@ const HeroSection: React.FC = () => {
         className="absolute top-0 left-0 w-full h-full object-cover"
       />
       <div className="relative z-10 flex flex-col items-start justify-center h-full bg-gradient-to-t from-black to-transparent p-8">
-        <h1 className="text-6xl font- text-white">{movieData.title}</h1>
+        <h1 className="text-5xl md:text-6xl font-archivo text-white w-1/3">{movieData.title}</h1>
         <p className="mt-4 text-lg text-gray-300 w-full md:w-1/3">{movieData.overview}</p>
         <div className='flex gap-6'>
           <div className='mt-4 px-4 py-2 bg-red-600 text-white rounded flex gap-2 items-center'>
