@@ -1,50 +1,42 @@
-# React + TypeScript + Vite
+# Netflix CLone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyek ini adalah sebuah aplikasi web yang dibangun untuk melatih keterampilan TypeScript saya dengan menggunakan React. Proyek ini bertujuan untuk mengaplikasikan pengetahuan yang diperoleh dari belajar React dan TypeScript dalam sebuah proyek nyata.
 
-Currently, two official plugins are available:
+## Tujuan Proyek
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Melatih Keterampilan TypeScript:** Proyek ini dirancang untuk meningkatkan keterampilan saya dalam menggunakan TypeScript dengan React, termasuk pemahaman dan penerapan TypeScript di lingkungan React.
+- **Praktik Pengembangan Aplikasi Web:** Mengembangkan aplikasi web nyata yang menerapkan konsep-konsep penting dari React dan TypeScript.
+- **Pengalaman dalam Struktur Proyek:** Menyusun proyek dengan struktur yang baik dan memanfaatkan berbagai fitur dari React dan TypeScript.
 
-## Expanding the ESLint configuration
+## Fitur Utama
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Antarmuka Pengguna Dinamis:** Menggunakan React untuk membuat antarmuka pengguna yang responsif dan interaktif.
+- **Manajemen Status:** Memanfaatkan state management dan hooks dari React untuk mengelola status aplikasi.
+- **Integrasi TypeScript:** Menggunakan TypeScript untuk menambahkan tipe statis dan memastikan kualitas kode.
 
-- Configure the top-level `parserOptions` property like this:
+## Struktur Proyek
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- `src/`: Berisi kode sumber aplikasi.
+  - `components/`: Komponen-komponen React.
+  - `pages/`: Halaman-halaman aplikasi.
+  - `service/`: Layanan untuk pengambilan data dan logika bisnis.
+- `public/`: Berisi file statis seperti gambar dan aset.
+- `tailwind.config.js`: Konfigurasi TailwindCSS.
+- `.env`: File konfigurasi lingkungan.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Instalasi
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Untuk menjalankan proyek ini di lingkungan lokal Anda, ikuti langkah-langkah berikut:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. Clone repositori ini:
+   ```bash
+   git clone https://github.com/username/repository.git
+2. Masuk Ke direktori Proyek:
+   ```bash
+   cd NetflixClone
+3. Instal dependensi: Pastikan Anda telah menginstal Node.js dan npm di sistem Anda. Setelah itu, instal dependensi proyek dengan menjalankan:
+   ```bash
+   npm install
+4. Running Aplikasi:
+   ```bash
+   npm run dev
