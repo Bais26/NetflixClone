@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* src/index.css */
+body {
+    background-color: #141414; /* Netflix background */
+    color: white;
+  }
+  
+  .movie-card img {
+    border-radius: 0.75rem;
+    transition: transform 0.3s;
+  }
+  
+  .movie-card:hover img {
+    transform: scale(1.05);
+  }
+  
+  .movie-card p {
+    font-weight: 600;
+    margin-top: 0.5rem;
+    color: #fff;
+  }
+  
+  

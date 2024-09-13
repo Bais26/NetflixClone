@@ -1,15 +1,23 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './index.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Index from './Route'
+import Movie from './components';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <>
-    <div className="text-3xl font-bold text-purple-600">
-      hallo kawan
-    </div>
-    </>
-  )
-}
+    // <div className="App">
+    //   <Navbar />
+    //   <Slider />
+    //   <GenreMovieList/>
+    // </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Index/>}>
+        <Route index element={<Movie/>}/>
+        </Route>
 
-export default App
+      </Routes>
+    </Router>
+  );
+};
+
+export default App;
