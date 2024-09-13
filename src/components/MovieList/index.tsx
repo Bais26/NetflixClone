@@ -51,7 +51,7 @@ const MovieList: React.FC<MovieListProps> = ({ genreId, index_ }) => {
                 ${index_ % 3 === 0 ? 'mt-[80px]' : 'mt-[150px]'}`} />
    
             <div ref={elementRef} className='flex overflow-x-auto gap-8
-                scrollbar-hide scroll-smooth pt-4 px-3 pb-4'>
+                scrollbar-hide scroll-smooth scrollbar-hide pt-4 px-3 pb-4'>
                 {movieList.map((item, index) => (
                     <React.Fragment key={index}>
                         {index_ % 3 === 0 ? <HrMovieCard movie={item} /> : <MovieCard movie={item} />}
